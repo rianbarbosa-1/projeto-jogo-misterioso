@@ -1,0 +1,13 @@
+<h1>Resultado do Jogo</h1>
+
+<p>Parabéns, {{ nome }}! Você fez {{ pontos }} ponto(s).</p>
+<p>O número misterioso era: {{ numero_misterioso }}</p>
+
+<h2>Ranking</h2>
+<ul>
+    {% for jogador in ranking %}
+        <li>{{ jogador.nome }} - {{ jogador.pontos }} ponto(s)</li>
+    {% endfor %}
+</ul>
+
+<a href="/">Jogar novamente</a>

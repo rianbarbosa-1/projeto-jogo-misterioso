@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking - Jogo Misterioso</title>
+</head>
+<body>
+    <h1>Ranking do Jogo Misterioso</h1>
+    
+    <ul>
+        {% for jogador in ranking %}
+            <li>{{ jogador.nome }} - {{ jogador.pontos }} ponto(s)</li>
+        {% endfor %}
+    </ul>
+    
+    <br>
+    <a href="/">Voltar para o início</a>
+</body>
+</html>

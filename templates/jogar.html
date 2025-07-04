@@ -1,0 +1,17 @@
+<h1>Adivinhe o número!</h1>
+
+<p>Tentativas restantes: {{ tentativas_restantes }}</p>
+
+<form method="post">
+    <input type="number" name="palpite" min="1" max="100" required>
+    <button type="submit">Enviar</button>
+</form>
+
+{% if mensagem %}
+    <p>{{ mensagem }}</p>
+{% endif %}
+
+{% if erro %}
+    <p style="color:red;">{{ erro }}</p>
+{% endif %}
+
